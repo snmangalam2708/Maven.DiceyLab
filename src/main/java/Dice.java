@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Dice {
 
     public int numberOfDice;
@@ -16,6 +14,7 @@ public class Dice {
         }
         return diceSum;
     }
+
     public int getNumberOfDice() {
         return numberOfDice;
     }

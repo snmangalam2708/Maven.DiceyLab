@@ -3,6 +3,13 @@ import java.util.TreeMap;
 public class Bins {
 
     public TreeMap<Integer, Integer> countTotals = new TreeMap<Integer, Integer>();
+    public int getNumberOfKeys() {
+        return numberOfKeys;
+    }
+    public int getNumberOfDice() {
+        return getNumberOfKeys()/6;
+    }
+
     int numberOfDice;
     int numberOfKeys;
 
@@ -27,13 +34,5 @@ public class Bins {
             countTotals.put(key, value);
         }
     }
-
-    public int getNumberOfKeys() {
-        return numberOfKeys;
-    }
-    public int getNumberOfDice() {
-        return getNumberOfKeys()/6;
-    }
-
 
 }
